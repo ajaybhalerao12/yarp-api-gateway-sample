@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Products.Api", "Products.Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.Api", "Users.Api\Users.Api.csproj", "{8B1167F9-EFFA-43C9-85CC-03967B323A89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yarp.Gateway", "Yarp.Gateway\Yarp.Gateway.csproj", "{54DC54C8-375F-4E9D-A29A-087758749546}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8B1167F9-EFFA-43C9-85CC-03967B323A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B1167F9-EFFA-43C9-85CC-03967B323A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B1167F9-EFFA-43C9-85CC-03967B323A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54DC54C8-375F-4E9D-A29A-087758749546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54DC54C8-375F-4E9D-A29A-087758749546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54DC54C8-375F-4E9D-A29A-087758749546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54DC54C8-375F-4E9D-A29A-087758749546}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
