@@ -5,9 +5,9 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Products.Api", "Products.Api\Products.Api.csproj", "{E8CABF0D-E5A8-4156-86B6-EBFD777CC682}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.Api", "Users.Api\Users.Api.csproj", "{8B1167F9-EFFA-43C9-85CC-03967B323A89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.Api", "Users.Api\Users.Api.csproj", "{8B1167F9-EFFA-43C9-85CC-03967B323A89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yarp.Gateway", "Yarp.Gateway\Yarp.Gateway.csproj", "{54DC54C8-375F-4E9D-A29A-087758749546}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yarp.Gateway", "Yarp.Gateway\Yarp.Gateway.csproj", "{54DC54C8-375F-4E9D-A29A-087758749546}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
