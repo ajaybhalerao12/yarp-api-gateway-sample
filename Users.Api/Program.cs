@@ -17,9 +17,9 @@ if (app.Environment.IsDevelopment())
 
 var persons = Enumerable.Range(1, 100).Select(num => new { Id = num, Name = new Faker().Person.FullName }).ToArray();
 
-app.MapGet("/users", (string? filter) => persons.Where(p => string.IsNullOrWhiteSpace(filter) || p.Name.Contains(filter)));
+app.MapGet("/users-service/users", (string? filter) => persons.Where(p => string.IsNullOrWhiteSpace(filter) || p.Name.Contains(filter)));
 
-app.MapGet("/users/{id}", (int id) =>
+app.MapGet("/users-service/users/{id}", (int id) =>
 {
     var person = persons.FirstOrDefault(p => p.Id == id);
     return person is not null ? Results.Ok(person) : Results.NotFound();

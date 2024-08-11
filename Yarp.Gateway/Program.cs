@@ -1,8 +1,21 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer();
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("authenticated", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+    });
+});
 
 builder.Services
     .AddReverseProxy()
@@ -20,8 +33,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.MapReverseProxy();
 
-//app.MapGet("/", () => "Hello World!");
 
 app.Run();
