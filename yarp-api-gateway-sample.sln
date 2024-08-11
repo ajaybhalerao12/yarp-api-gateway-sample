@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.Api", "Users.Api\User
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yarp.Gateway", "Yarp.Gateway\Yarp.Gateway.csproj", "{54DC54C8-375F-4E9D-A29A-087758749546}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIs", "APIs", "{4BC967A0-EE9C-4D91-839F-E023E4E00DA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E8CABF0D-E5A8-4156-86B6-EBFD777CC682} = {4BC967A0-EE9C-4D91-839F-E023E4E00DA0}
+		{8B1167F9-EFFA-43C9-85CC-03967B323A89} = {4BC967A0-EE9C-4D91-839F-E023E4E00DA0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92E187FC-C97F-4021-84EA-A81B4D339493}
